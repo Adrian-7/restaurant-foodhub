@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodHub</title>
+
+    <!--
+    - css linkuri 
+  -->
+    <link rel="stylesheet" href="./assets/css/foodhub.css" />
+    <link rel="stylesheet" href="./assets/css/media_query.css" />
+
+    <!--
+    - google font linkuri
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <div class="navbar-wrapper">
+            <a href="#">
+              <img src="./assets/images/logo.svg" alt="logo" width="130" />
+            </a>
+
+            <ul class="navbar-nav">
+              <li>
+                <a href="#home" class="nav-link">Acasă</a>
+              </li>
+
+              <li>
+                <a href="#about" class="nav-link">Despre noi</a>
+              </li>
+
+              <li>
+                <a href="#services" class="nav-link">Servicii</a>
+              </li>
+
+              <li>
+                <a href="#menu" class="nav-link">Meniu</a>
+              </li>
+
+              <li>
+                <a href="#testimonials" class="nav-link">Recenzii</a>
+              </li>
+            </ul>
+
+            <div class="navbar-btn-group">
+              <button class="shopping-cart-btn">
+                <img
+                  src="./assets/images/cart.svg"
+                  alt="shopping cart icon"
+                  width="18"
+                />
+                <span class="count">8</span>
+              </button>
+
+              <button class="menu-toggle-btn">
+                <span class="line one"></span>
+                <span class="line two"></span>
+                <span class="line three"></span>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="cart-box">
+          <ul class="cart-box-ul">
+            <h4 class="cart-h4">Comanda dumneavoastră.</h4>
+
+            <li>
+              <a href="#" class="cart-item">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu1.jpg"
+                    alt="product image"
+                    class="product-img"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h5 class="product-name">Cappuccino</h5>
+                <p class="product-price"><span class="small">lei</span>10</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="cart-item">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu2.jpg"
+                    alt="product image"
+                    class="product-img"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h5 class="product-name">Salată Tex-Mex</h5>
+                <p class="product-price"><span class="small">lei</span>45</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="cart-item">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu3.jpg"
+                    alt="product image"
+                    class="product-img"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h5 class="product-name">Salată Mediteraneană</h5>
+                <p class="product-price"><span class="small">lei</span>55</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="cart-item">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu4.jpg"
+                    alt="product image"
+                    class="product-img"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h5 class="product-name">Burger</h5>
+                <p class="product-price"><span class="small">lei</span>50</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="cart-item">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu5.jpg"
+                    alt="product image"
+                    class="product-img"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h5 class="product-name">Paste</h5>
+                <p class="product-price"><span class="small">lei</span>35</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cart-item">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu8.jpeg"
+                    alt="product image"
+                    class="product-img"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h5 class="product-name">Salată Rainbow</h5>
+                <p class="product-price"><span class="small">lei</span>50</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cart-item">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu6.jpeg"
+                    alt="product image"
+                    class="product-img"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h5 class="product-name">Allora</h5>
+                <p class="product-price"><span class="small">lei</span>70</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cart-item">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu7.jpeg"
+                    alt="product image"
+                    class="product-img"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h5 class="product-name">Clătite cu afine</h5>
+                <p class="product-price"><span class="small">lei</span>55</p>
+              </a>
+            </li>
+          </ul>
+
+          <div class="cart-btn-group">
+            <button class="btn btn-secondary">Vezi comanda</button>
+            <button class="btn btn-primary">Achită</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="home" id="home">
+          <div class="home-left">
+            <p class="home-subtext">Bună, nou prieten!</p>
+
+            <h1 class="main-heading">Noi nu gătim, noi îți creăm emoțiile!</h1>
+
+            <p class="home-text">
+              Bucură-te de o experiență culinară de neuitat într-un decor
+              primitor, unde aromele autentice și serviciul impecabil se
+              întâlnesc pentru a-ți oferi o cină deosebită la restaurantul
+              nostru.
+            </p>
+
+            <div class="btn-group">
+              <button class="btn btn-primary btn-icon">
+                <img src="./assets/images/menu.svg" alt="menu icon" />
+                Meniul Nostru
+              </button>
+
+              <button class="btn btn-secondary btn-icon">
+                <img src="./assets/images/arrow.svg" alt="menu icon" />
+                Despre noi
+              </button>
+            </div>
+          </div>
+
+          <div class="home-right">
+            <img
+              src="./assets/images/food1.png"
+              alt="food image"
+              class="food-img food-1"
+              width="200"
+              loading="lazy"
+            />
+            <img
+              src="./assets/images/food2.png"
+              alt="food image"
+              class="food-img food-2"
+              width="200"
+              loading="lazy"
+            />
+            <img
+              src="./assets/images/food3.png"
+              alt="food image"
+              class="food-img food-3"
+              width="200"
+              loading="lazy"
+            />
+
+            <img
+              src="./assets/images/dialog-1.jpg"
+              alt="dialog"
+              class="dialog dialog-1"
+              width="230"
+            />
+            <img
+              src="./assets/images/dialog-2.jpg"
+              alt="dialog"
+              class="dialog dialog-2"
+              width="230"
+            />
+
+            <img
+              src="./assets/images/circle.svg"
+              alt="circle shape"
+              class="shape shape-1"
+              width="25"
+            />
+            <img
+              src="./assets/images/circle.svg"
+              alt="circle shape"
+              class="shape shape-2"
+              width="15"
+            />
+            <img
+              src="./assets/images/circle.svg"
+              alt="circle shape"
+              class="shape shape-3"
+              width="30"
+            />
+            <img
+              src="./assets/images/ring.svg"
+              alt="ring shape"
+              class="shape shape-4"
+              width="60"
+            />
+            <img
+              src="./assets/images/ring.svg"
+              alt="ring shape"
+              class="shape shape-5"
+              width="40"
+            />
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <div class="about-left">
+            <div class="img-box">
+              <img
+                src="./assets/images/ezgif.com-webp-to-jpg.jpg"
+                alt="about image"
+                class="about-img"
+                width="250"
+              />
+            </div>
+
+            <div class="abs-content-box">
+              <div class="dotted-border">
+                <p class="number-lg">5</p>
+                <p class="text-md">
+                  Ani <br />
+                  de Experiență
+                </p>
+              </div>
+            </div>
+
+            <img
+              src="./assets/images/circle.svg"
+              alt="circle shape"
+              class="shape shape-6"
+              width="20"
+            />
+            <img
+              src="./assets/images/circle.svg"
+              alt="circle shape"
+              class="shape shape-7"
+              width="30"
+            />
+            <img
+              src="./assets/images/ring.svg"
+              alt="ring shape"
+              class="shape shape-8"
+              width="35"
+            />
+            <img
+              src="./assets/images/ring.svg"
+              alt="ring shape"
+              class="shape shape-9"
+              width="80"
+            />
+          </div>
+
+          <div class="about-right">
+            <h2 class="section-title">Facem mai mult decât vă așteptați</h2>
+
+            <p class="section-text">
+              Echipa noastră de bucătari talentați și experimentați vă întâmpină
+              cu o selecție de preparate inovatoare, gândite să satisfacă cele
+              mai exigente gusturi. Meniul nostru este o călătorie prin arome
+              autentice și combinații îndrăznețe, toate pregătite cu ingrediente
+              proaspete și de cea mai înaltă calitate.
+            </p>
+
+            <p class="section-text">
+              Profesionalismul nostru se reflectă în atenția acordată fiecărui
+              client. Personalul nostru dedicat și bine instruit este aici
+              pentru a vă oferi o experiență senzațională, unde serviciile
+              personalizate și ospitalitatea sunt la fel de importante precum
+              preparatele noastre deosebite.
+            </p>
+
+            <img
+              src="./assets/images/signature1.png"
+              alt="signature"
+              class="signature"
+              width="350"
+            />
+          </div>
+        </section>
+
+        <section class="services" id="services">
+          <div class="service-card">
+            <p class="card-number">01</p>
+
+            <h3 class="card-heading">Suntem situați în centrul orașului</h3>
+
+            <p class="card-text">
+              Fiind amplasați în inima orașului, oferim clienților noștri acces
+              ușor și rapid la o destinație culinară de încredere, fiind o
+              opțiune atrăgătoare pentru o pauză de prânz sau o seară relaxantă
+              în centrul agitației urbane.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <p class="card-number">02</p>
+
+            <h3 class="card-heading">
+              Ingrediente proaspete de la fermele ecologice
+            </h3>
+
+            <p class="card-text">
+              Ne angajăm să folosim exclusiv ingrediente proaspete, obținute
+              direct de la fermele ecologice locale, asigurându-ne că
+              preparatele noastre sunt pline de savoare autentică și nutritive,
+              susținând în același timp practici sustenabile și responsabile.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <p class="card-number">03</p>
+
+            <h3 class="card-heading">Livrare proprie rapidă</h3>
+
+            <p class="card-text">
+              Cu propria noastră flotă de livrare, garantăm clienților noștri
+              servicii rapide și eficiente, aducând deliciile noastre direct la
+              ușa lor. Ne concentrăm pe asigurarea că mâncarea ajunge proaspătă
+              și în cea mai bună condiție, în cel mai scurt timp posibil.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <p class="card-number">04</p>
+
+            <h3 class="card-heading">Bucătari profesioniști, cu experiență</h3>
+
+            <p class="card-text">
+              Echipa noastră de bucătari aduce o vastă experiență în arta
+              culinară, pregătind fiecare fel cu pricepere și pasiune. De la
+              tehnici rafinate la rețete inovatoare, ne străduim să oferim
+              clienților noștri o experiență gastronomică de excepție.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <p class="card-number">05</p>
+
+            <h3 class="card-heading">Cele mai înalte standarde de servicii</h3>
+
+            <p class="card-text">
+              La restaurantul nostru, clienții sunt tratați cu respect și
+              atenție deplină. Echipa noastră se angajează să ofere servicii
+              impecabile, iar calitatea și satisfacția clienților sunt
+              priorități absolute, reflectate în fiecare detaliu, de la
+              atmosfera primitoare până la interacțiunea cu personalul nostru
+              calificat.
+            </p>
+          </div>
+        </section>
+
+        <section class="product" id="menu">
+          <h2 class="section-title">Cele mai populare feluri de mâncare</h2>
+
+          <p class="section-text">
+            Experimentează o sinfonie de arome și savoare autentică cu produsele
+            noastre.
+          </p>
+
+          <div class="products-grid">
+            <a href="#">
+              <div class="product-card">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu1.jpg"
+                    alt="product image"
+                    class="product-img"
+                    width="200"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="product-content">
+                  <div class="wrapper">
+                    <h3 class="product-name">Cappuccino</h3>
+
+                    <p class="product-price">
+                      <span class="small">lei</span>10
+                    </p>
+                  </div>
+
+                  <p class="product-text">Cafea, lapte.</p>
+
+                  <div class="product-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="product-card">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu2.jpg"
+                    alt="product image"
+                    class="product-img"
+                    width="200"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="product-content">
+                  <div class="wrapper">
+                    <h3 class="product-name">Salată Tex-Mex</h3>
+
+                    <p class="product-price">
+                      <span class="small">lei</span>45
+                    </p>
+                  </div>
+
+                  <p class="product-text">
+                    roșii, brânză, ciuperci, tăiței de orez, porumb, crevetă,
+                    boabe de fasole.
+                  </p>
+
+                  <div class="product-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="product-card">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu3.jpg"
+                    alt="product image"
+                    class="product-img"
+                    width="200"
+                    loading="lazy"
+                  />
+
+                  <div class="card-badge green">
+                    <ion-icon name="leaf"></ion-icon>
+                    <p>Vegan</p>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="wrapper">
+                    <h3 class="product-name">Salată Mediteraneană</h3>
+
+                    <p class="product-price">
+                      <span class="small">lei</span>55
+                    </p>
+                  </div>
+
+                  <p class="product-text">
+                    Sushi, creveți, castraveți, fructe de mare.
+                  </p>
+
+                  <div class="product-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="product-card">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu4.jpg"
+                    alt="product image"
+                    class="product-img"
+                    width="200"
+                    loading="lazy"
+                  />
+
+                  <div class="card-badge red">
+                    <ion-icon name="flame"></ion-icon>
+                    <p>Hot</p>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="wrapper">
+                    <h3 class="product-name">Burger</h3>
+
+                    <p class="product-price">
+                      <span class="small">lei</span>50
+                    </p>
+                  </div>
+
+                  <p class="product-text">
+                    Chiflă, biftec de carne, sosuri, roșii, cașcaval.
+                  </p>
+
+                  <div class="product-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="product-card">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu5.jpg"
+                    alt="product image"
+                    class="product-img"
+                    width="200"
+                    loading="lazy"
+                  />
+
+                  <div class="card-badge green">
+                    <ion-icon name="leaf"></ion-icon>
+                    <p>Vegan</p>
+                  </div>
+                </div>
+
+                <div class="product-content">
+                  <div class="wrapper">
+                    <h3 class="product-name">Paste</h3>
+
+                    <p class="product-price">
+                      <span class="small">lei</span>35
+                    </p>
+                  </div>
+
+                  <p class="product-text">
+                    Paste, sos de roșii, parmezan, roșii la grătar.
+                  </p>
+
+                  <div class="product-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="product-card">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu8.jpeg"
+                    alt="product image"
+                    class="product-img"
+                    width="200"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="product-content">
+                  <div class="wrapper">
+                    <h3 class="product-name">Salată Rainbow</h3>
+
+                    <p class="product-price">
+                      <span class="small">lei</span>50
+                    </p>
+                  </div>
+
+                  <p class="product-text">
+                    Frunze verzi, morcov, ardei roșu, castraveți, avocado, nuci.
+                  </p>
+
+                  <div class="product-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="product-card">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu6.jpeg"
+                    alt="product image"
+                    class="product-img"
+                    width="200"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="product-content">
+                  <div class="wrapper">
+                    <h3 class="product-name">Allora</h3>
+
+                    <p class="product-price">
+                      <span class="small">lei</span>70
+                    </p>
+                  </div>
+
+                  <p class="product-text">
+                    Lasagna, homar, sos bechamel, sos de roșii, brânză.
+                  </p>
+
+                  <div class="product-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="product-card">
+                <div class="img-box">
+                  <img
+                    src="./assets/images/menu7.jpeg"
+                    alt="product image"
+                    class="product-img"
+                    width="200"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="product-content">
+                  <div class="wrapper">
+                    <h3 class="product-name">Clătite cu afine</h3>
+
+                    <p class="product-price">
+                      <span class="small">lei</span>55
+                    </p>
+                  </div>
+
+                  <p class="product-text">Clătite, afine, zahăr pudră.</p>
+
+                  <div class="product-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <button class="btn btn-primary btn-icon">
+            <img src="/assets/images/menu.svg" alt="menu icon" />
+            Tot meniul
+          </button>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+          <h2 class="section-title">Ce spun clienții noștri?</h2>
+
+          <p class="section-text">
+            Cel mai important lucru pentru noi este părerea clienților.
+          </p>
+
+          <div class="testimonials-grid">
+            <div class="testimonials-card">
+              <h4 class="card-title">Foarte gustos!</h4>
+
+              <div class="testimonials-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+
+              <p class="testimonials-text">
+                Experiența mea la acest restaurant a fost absolut remarcabilă!
+                Am comandat un burger cu carne de vită suculentă și topping-uri
+                proaspete, iar gustul a fost pur și simplu divin. Atmosfera
+                primitoare și personalul amabil au contribuit la o seară
+                perfectă. Cu siguranță voi reveni pentru a încerca și alte
+                delicii din meniul lor variat!
+              </p>
+
+              <div class="customer-info">
+                <div class="customer-img-box">
+                  <img
+                    src="./assets/images/testimonials1.jpg"
+                    alt="customer image"
+                    class="customer-img"
+                    width="100"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h5 class="customer-name">Alexandra Morari</h5>
+              </div>
+            </div>
+
+            <div class="testimonials-card">
+              <h4 class="card-title">Eu iau prânzul aici în fiecare zi</h4>
+
+              <div class="testimonials-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+
+              <p class="testimonials-text">
+                Cina de ieri la acest restaurant a fost o adevărată revelație
+                culinară! Am optat pentru o salată mediteraneană vegană și a
+                fost atât de delicioasă încât am simțit că mă bucur de o
+                explozie de arome în fiecare mușcătură. Ingrediente proaspete și
+                o prezentare artistică au făcut această masă memorabilă. Cu
+                siguranță, voi reveni să descopăr și alte comori gastronomice de
+                pe meniul lor captivant!
+              </p>
+
+              <div class="customer-info">
+                <div class="customer-img-box">
+                  <img
+                    src="./assets/images/testimonials2.jpg"
+                    alt="customer image"
+                    class="customer-img"
+                    width="100"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h5 class="customer-name">Vitalie Munteanu</h5>
+              </div>
+            </div>
+          </div>
+          <br />
+          <p class="contacts">Contacte: 061135488</p>
+          <br />
+          <p class="contacts">E-mail: adminfoodhub@gmail.com</p>
+          <br />
+          <p class="contacts">Orele de lucru: Luni - Sâmbătă(08:00 - 22:00)</p>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-wrapper">
+          <a href="#">
+            <img
+              src="./assets/images/logo-footer.svg"
+              alt="logo"
+              class="footer-brand"
+              width="130"
+            />
+          </a>
+          <div class="social-link">
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </div>
+
+          <p class="copyright">
+            &copy; Copyright 2023. Toate drepturile rezervate.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./assets/js/foodhub.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
